@@ -68,7 +68,7 @@ if(${ENABLE_BACKTRACE})
   target_compile_definitions(vlog PRIVATE -DBACKWARD_HAS_DWARF=1)
 
   target_sources(vlog PRIVATE src/callstack.cpp)
-  target_include_directories(vlog PRIVATE ${LIBELF_INCLUDE_DIRS} ${LIBDWARF_INCLUDE_DIRS})
+  target_include_directories(vlog SYSTEM PRIVATE ${LIBELF_INCLUDE_DIRS} ${LIBDWARF_INCLUDE_DIRS})
   target_link_libraries(vlog PRIVATE dl ${LIBELF_LIBRARIES} ${LIBDWARF_LIBRARIES})
 
   add_library(backward INTERFACE)

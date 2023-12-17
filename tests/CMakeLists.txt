@@ -1,4 +1,4 @@
-fetch_dependency(gtest "https://github.com/google/googletest.git" "8a6feabf04bec8fb125e0df0ad1195c42350725f")
+fetch_dependency(gtest "https://github.com/google/googletest.git" "v1.14.0")
 
 list(APPEND CMAKE_MODULE_PATH ${CMAKE_CURRENT_SOURCE_DIR})
 include(AddValgrindTest)
