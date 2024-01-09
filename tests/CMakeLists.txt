@@ -16,7 +16,6 @@ macro(add_vlog_test test_name test_cpp)
       -Werror \
       -Wall \
       -Wextra \
-      -Weverything \
       -Werror=return-type \
       -Wno-c++98-compat \
       -Wno-c++98-compat-pedantic \

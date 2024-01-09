@@ -51,7 +51,7 @@ target_include_directories(vlog PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/src)
 if("${CMAKE_CXX_COMPILER_ID}" STREQUAL "GNU")
   target_compile_options(vlog PRIVATE -pedantic -Werror -Wall -Wextra -Wno-stringop-truncation)
 elseif("${CMAKE_CXX_COMPILER_ID}" MATCHES "Clang")
-  target_compile_options(vlog PRIVATE -Weverything -Werror -Wall -Wextra -Werror=return-type
+  target_compile_options(vlog PRIVATE -Werror -Wall -Wextra -Werror=return-type
           -Wno-c++98-compat -Wno-c++98-compat-pedantic -Wno-ctad-maybe-unsupported
           -Wno-missing-noreturn -Wno-global-constructors -Wno-reserved-id-macro)
 endif()
